@@ -19,6 +19,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
+    // {
+    //   resolve: `gatsby-plugin-sharp`,
+    //   options: {
+    //     defaults: {
+    //       quality: 50
+    //     }
+    //   }
+    // },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
@@ -33,6 +41,19 @@ module.exports = {
       options: {
         name: `music`,
         path: `./src/assets/music/`,
+      },
+    },
+    'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {
+          '/fonts/*': [
+            'Cache-Control: public',
+            'Cache-Control: max-age=365000000',
+            'Cache-Control: immutable',
+          ],
+        },
       },
     },
   ],

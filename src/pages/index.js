@@ -1,5 +1,8 @@
 import * as React from 'react';
 
+import { Hero } from '../components/Hero';
+import { Layout } from '../components/Layout';
+
 const IndexPage = () => {
   // const data = useStaticQuery(graphql`
   //   {
@@ -13,7 +16,11 @@ const IndexPage = () => {
   //     }
   //   }
   // `);
-  return <main>mainpage</main>;
+  return (
+    <Layout>
+      <Hero />
+    </Layout>
+  );
 };
 
 export default IndexPage;
