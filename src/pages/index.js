@@ -1,25 +1,22 @@
 import * as React from 'react';
+import { AudioPlayerProvider } from 'react-use-audio-player';
 
+import { About } from '../components/About';
+import { Faq } from '../components/Faq';
 import { Hero } from '../components/Hero';
 import { Layout } from '../components/Layout';
+import { Mywork } from '../components/Mywork';
 
 const IndexPage = () => {
-  // const data = useStaticQuery(graphql`
-  //   {
-  //     allFile(filter: { sourceInstanceName: { eq: "music" } }) {
-  //       edges {
-  //         node {
-  //           name
-  //           publicURL
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
   return (
-    <Layout>
-      <Hero />
-    </Layout>
+    <AudioPlayerProvider>
+      <Layout>
+        <Hero />
+        <About />
+        <Mywork />
+        <Faq />
+      </Layout>
+    </AudioPlayerProvider>
   );
 };
 

@@ -24,7 +24,8 @@ export const Hero = () => {
         className="absolute inset-0 flex flex-col justify-around"
         style={{ color: '#ECE9E4' }}
       >
-        <div className="mt-40">
+        {/* <div className="mt-40"> */}
+        <div className="flex flex-col justify-center h-4/6">
           <h1 className="text-center text-6xl sm:text-8xl lg:text-9xl">
             Whitesand
           </h1>

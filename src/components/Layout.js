@@ -5,7 +5,9 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main style={{ backgroundColor: '#111111', color: '#ECE9E4' }}>
+        {children}
+      </main>
     </>
   );
 };
