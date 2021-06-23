@@ -3,11 +3,9 @@ import { Navbar } from './Navbar';
 
 export const Layout = ({ children }) => {
   return (
-    <>
+    <div className="bg-black text-gray">
       <Navbar />
-      <main style={{ backgroundColor: '#111111', color: '#ECE9E4' }}>
-        {children}
-      </main>
-    </>
+      <main>{children}</main>
+    </div>
   );
 };

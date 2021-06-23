@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export const About = () => {
   return (
-    <section className="flex mx-auto px-4 my-32" style={{ maxWidth: '1400px' }}>
+    <section className="flex mx-auto px-4 my-32 max-w-8xl">
       <div className="flex flex-col justify-center w-6/12">
         <h2 className="text-7xl">About me</h2>
         <p className="font-sans text-lg opacity-80 mt-16">

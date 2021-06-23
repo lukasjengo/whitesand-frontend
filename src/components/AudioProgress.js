@@ -19,8 +19,7 @@ export const AudioProgress = () => {
       <AudioTime />
       <div>
         <div
-          style={{ backgroundColor: 'rgba(236, 233, 228, .5)' }}
-          className="cursor-pointer overflow-hidden h-1 mb-4 flex"
+          className="cursor-pointer overflow-hidden h-1 mb-4 flex bg-gray bg-opacity-50"
           onClick={(event) =>
             goToPosition(
               (event.clientX -
@@ -32,9 +31,8 @@ export const AudioProgress = () => {
           <div
             style={{
               width: `${percentComplete}%`,
-              backgroundColor: '#ECE9E4',
             }}
-            className="flex justify-center"
+            className="flex justify-center bg-gray"
           ></div>
         </div>
       </div>

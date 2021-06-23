@@ -2,14 +2,8 @@ import React from 'react';
 
 export const Navbar = () => {
   return (
-    <div
-      className="absolute w-full top-0 left-0 z-50"
-      style={{ color: '#ECE9E4' }}
-    >
-      <div
-        className="flex items-center px-4 py-10 mx-auto"
-        style={{ maxWidth: '1400px' }}
-      >
+    <div className="absolute w-full top-0 left-0 z-50">
+      <div className="flex items-center px-4 py-10 mx-auto max-w-8xl">
         <div className="text-3xl">Ws</div>
         <nav className="ml-auto text-base uppercase">
           <a href="" className="mr-6">

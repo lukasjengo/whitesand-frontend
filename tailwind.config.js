@@ -9,6 +9,17 @@ module.exports = {
         serif: ['CinzelVariable', ...defaultTheme.fontFamily.serif],
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
+      maxWidth: {
+        '8xl': '88rem',
+      },
+      colors: {
+        gray: {
+          DEFAULT: '#ECE9E4',
+        },
+        black: {
+          DEFAULT: '#111111',
+        },
+      },
     },
   },
   variants: {

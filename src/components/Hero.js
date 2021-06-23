@@ -20,10 +20,7 @@ export const Hero = () => {
         {/*Maybe use this insead of bg image linear gradient*/}
         {/* <div className="absolute inset-0 bg-gray-700 mix-blend-multiply" /> */}
       </div>
-      <div
-        className="absolute inset-0 flex flex-col justify-around"
-        style={{ color: '#ECE9E4' }}
-      >
+      <div className="absolute inset-0 flex flex-col justify-around">
         {/* <div className="mt-40"> */}
         <div className="flex flex-col justify-center h-4/6">
           <h1 className="text-center text-6xl sm:text-8xl lg:text-9xl">
@@ -34,15 +31,15 @@ export const Hero = () => {
               Musician
             </h3>
             <div>
-              <WaveLong />
-              <WaveLong />
+              <WaveLong className="w-12 h-1" />
+              <WaveLong className="w-12 h-1" />
             </div>
             <h3 className="text-lg lg:text-2xl tracking-widest opacity-70 px-6 lg:px-12">
               Composer
             </h3>
             <div>
-              <WaveLong />
-              <WaveLong />
+              <WaveLong className="w-12 h-1" />
+              <WaveLong className="w-12 h-1" />
             </div>
             <h3 className="text-lg lg:text-2xl tracking-widest opacity-70 px-6 lg:px-12">
               Producer

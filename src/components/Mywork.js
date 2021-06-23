@@ -17,9 +17,9 @@ const GlobalPlayer = () => {
         disabled={!ready}
       >
         {playing ? (
-          <Pause width="80" height="80" />
+          <Pause className="w-20 h-20" />
         ) : (
-          <Play width="80" height="80" />
+          <Play className="w-20 h-20" />
         )}
       </button>
       <AudioProgress />
@@ -47,7 +47,7 @@ export const Mywork = () => {
   const { load, playing, pause } = useAudioPlayer();
 
   return (
-    <section className="mx-auto px-4 my-32" style={{ maxWidth: '1400px' }}>
+    <section className="mx-auto px-4 my-32 max-w-8xl">
       <div className="text-center">
         <h2 className="text-7xl">My work</h2>
         <div className="text-2xl opacity-60 tracking-widest mt-6">
@@ -66,7 +66,7 @@ export const Mywork = () => {
                       pause();
                     }}
                   >
-                    <Pause />
+                    <Pause className="w-10 h-10" />
                   </button>
                 ) : (
                   <button
@@ -101,14 +101,14 @@ export const Mywork = () => {
                       });
                     }}
                   >
-                    <Play />
+                    <Play className="w-10 h-10" />
                   </button>
                 )}
                 <div className="ml-4 flex-1 flex">
                   <p className="text-base">{edge.node.name}</p>
                   <div className="flex ml-auto">
-                    <Spotify />
-                    <Youtube />
+                    <Spotify className="w-6 h-6" />
+                    <Youtube className="w-6 h-6" />
                   </div>
                 </div>
               </li>
