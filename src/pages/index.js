@@ -6,6 +6,7 @@ import { Faq } from '../components/Faq';
 import { Hero } from '../components/Hero';
 import { Layout } from '../components/Layout';
 import { Mywork } from '../components/Mywork';
+import { Contact } from '../components/Contact';
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
         <About />
         <Mywork />
         <Faq />
+        <Contact />
       </Layout>
     </AudioPlayerProvider>
   );

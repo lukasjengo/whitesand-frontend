@@ -5,3 +5,6 @@ export * from './Spotify';
 export * from './Wave';
 export * from './Youtube';
 export * from './ChevronDown';
+export * from './XIcon';
+export * from './Refresh';
+export * from './ExclamationCircle';
