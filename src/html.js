@@ -13,7 +13,7 @@ export default function HTML(props) {
         />
         <link
           rel="preload"
-          href="/fonts/cinzel-latin-variable-wghtOnly-normal.woff2"
+          href="/fonts/cinzel-latin-400-normal.woff2"
           as="font"
           crossOrigin="anonymous"
           type="font/woff2"

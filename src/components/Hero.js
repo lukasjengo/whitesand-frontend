@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { WaveLong } from '../icons/Wave';
+import { WaveLong, Wave } from '../icons/Wave';
 
 export const Hero = () => {
   return (
@@ -23,7 +23,7 @@ export const Hero = () => {
       <div className="absolute inset-0 flex flex-col justify-around">
         {/* <div className="mt-40"> */}
         <div className="flex flex-col justify-center h-4/6">
-          <h1 className="text-center text-6xl sm:text-8xl lg:text-9xl">
+          <h1 className="text-center text-6xl sm:text-7xl lg:text-8xl">
             Whitesand
           </h1>
           <div className="flex justify-center items-center mt-10">
@@ -31,15 +31,15 @@ export const Hero = () => {
               Musician
             </h3>
             <div>
-              <WaveLong className="w-12 h-1" />
-              <WaveLong className="w-12 h-1" />
+              <WaveLong className="w-6 lg:w-12 h-1" />
+              <WaveLong className="w-6 lg:w-12 h-1" />
             </div>
             <h3 className="text-lg lg:text-2xl tracking-widest opacity-70 px-6 lg:px-12">
               Composer
             </h3>
             <div>
-              <WaveLong className="w-12 h-1" />
-              <WaveLong className="w-12 h-1" />
+              <WaveLong className="w-6 lg:w-12 h-1" />
+              <WaveLong className="w-6 lg:w-12 h-1" />
             </div>
             <h3 className="text-lg lg:text-2xl tracking-widest opacity-70 px-6 lg:px-12">
               Producer

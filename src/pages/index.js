@@ -7,16 +7,18 @@ import { Hero } from '../components/Hero';
 import { Layout } from '../components/Layout';
 import { Mywork } from '../components/Mywork';
 import { Contact } from '../components/Contact';
+import { Services } from '../components/Services';
 
 const IndexPage = () => {
   return (
     <AudioPlayerProvider>
       <Layout>
         <Hero />
-        <About />
+        {/* <About />
         <Mywork />
+        <Services />
         <Faq />
-        <Contact />
+        <Contact /> */}
       </Layout>
     </AudioPlayerProvider>
   );

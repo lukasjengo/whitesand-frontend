@@ -6,11 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['CinzelVariable', ...defaultTheme.fontFamily.serif],
+        serif: ['Cinzel', ...defaultTheme.fontFamily.serif],
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
-      },
-      maxWidth: {
-        '8xl': '88rem',
       },
       colors: {
         gray: {

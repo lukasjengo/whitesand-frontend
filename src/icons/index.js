@@ -1,4 +1,3 @@
-export * from './Chevron';
 export * from './Pause';
 export * from './Play';
 export * from './Spotify';
