@@ -3,10 +3,13 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export const About = () => {
   return (
-    <section className="grid grid-cols-2 gap-x-56 items-center mx-auto px-4 my-32 max-w-8xl">
+    <section
+      className="grid md:grid-cols-2 gap-y-10 gap-x-20 lg:gap-x-40 xl:gap-x-56 items-center mx-auto px-0 md:px-6 py-16 sm:py-32 max-w-7xl"
+      id="about"
+    >
       <div>
-        <h2 className="text-7xl">About me</h2>
-        <p className="font-sans text-lg opacity-80 mt-16">
+        <h2 className="text-4xl sm:text-6xl px-6 md:px-0">About me</h2>
+        <p className="font-sans text-base opacity-80 mt-8 sm:mt-16 px-6 md:px-0">
           I am a self-taught 26-year-old musician from Vilnius, Lithuania. In
           2016 I started a project 'Whitesand'. Throughout these years I have
           developed as a musician, learned and improved in my field, made
@@ -16,19 +19,19 @@ export const About = () => {
           a cinematic music composer, but making this type of music currently is
           my main occupation.
         </p>
-        <p className="font-sans text-lg opacity-80 mt-6">
+        <p className="font-sans text-base opacity-80 mt-6 px-6 md:px-0">
           I am a simple guy, who just loves music and finds meaning in it. I do
           believe in the ethic of hard work and doing your best.
         </p>
       </div>
       <div>
         <StaticImage
-          // layout="constrained"
           alt="Whitesand sitting on a road curb with a distant look."
           src="../assets/images/whitesand-profile.jpg"
           formats={['auto', 'webp', 'avif']}
-          quality={100}
+          quality={80}
           className="w-full"
+          placeholder="tracedSVG"
         />
       </div>
     </section>

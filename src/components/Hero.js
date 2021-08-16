@@ -18,10 +18,14 @@ export const Hero = () => {
           formats={['auto', 'webp', 'avif']}
           quality={100}
           className="h-full w-full object-cover"
+          placeholder="dominantColor"
         />
         <div
-          className="absolute inset-x-0 from-transparent to-black mix-blend-multiply bg-gradient-to-b"
-          style={{ bottom: 0, top: '75%' }}
+          className="absolute inset-x-0 from-transparent to-black bg-gradient-to-b"
+          style={{
+            bottom: 0,
+            top: '50%',
+          }}
         />
       </div>
       <div className="absolute inset-0 flex flex-col justify-around">
@@ -56,7 +60,7 @@ export const Hero = () => {
           </span>
           <Link
             to="/#my-work"
-            className="text-xs sm:text-sm border-b-2 mt-8 hover:opacity-70 transition-opacity"
+            className="text-base sm:text-sm border-b-2 mt-8 hover:opacity-70 transition-opacity"
           >
             Hear my work
           </Link>

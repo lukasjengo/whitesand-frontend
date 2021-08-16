@@ -14,8 +14,8 @@ const IndexPage = () => {
     <AudioPlayerProvider>
       <Layout>
         <Hero />
-        {/* <About />
-        <Mywork />
+        <About />
+        {/* <Mywork />
         <Services />
         <Faq />
         <Contact /> */}
