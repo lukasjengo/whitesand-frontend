@@ -26,6 +26,7 @@
     "gatsby-plugin-sharp": "^3.6.0",
     "gatsby-plugin-sitemap": "^4.2.0",
     "gatsby-source-filesystem": "^3.6.0",
+    "gatsby-transformer-json": "^3.11.0",
     "gatsby-transformer-sharp": "^3.6.0",
     "react": "^17.0.1",
     "react-accessible-accordion": "^3.3.4",

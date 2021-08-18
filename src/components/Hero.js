@@ -24,7 +24,7 @@ export const Hero = () => {
           className="absolute inset-x-0 from-transparent to-black bg-gradient-to-b"
           style={{
             bottom: 0,
-            top: '50%',
+            top: '80%',
           }}
         />
       </div>
@@ -53,14 +53,12 @@ export const Hero = () => {
             </h3>
           </div>
         </div>
-        <div className="flex flex-col items-center">
-          <ButtonLink />
-          <span className="uppercase text-xs sm:text-sm mt-8 opacity-70">
-            or
-          </span>
+        <div className="flex flex-col items-center pb-4 sm:pb-10">
+          <ButtonLink to="/#contact">Get in touch</ButtonLink>
+          <span className="text-base mt-8 opacity-70">or</span>
           <Link
             to="/#my-work"
-            className="text-base sm:text-sm border-b-2 mt-8 hover:opacity-70 transition-opacity"
+            className="text-base border-b-2 mt-8 hover:opacity-70 transition-opacity"
           >
             Hear my work
           </Link>

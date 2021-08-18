@@ -9,9 +9,8 @@ export const AudioTime = () => {
   const elapsed = typeof position === 'number' ? position : 0;
 
   return (
-    <time className="text-7xl">
+    <time className="text-4xl sm:text-6xl">
       {`${formatTimeClock(elapsed)} / ${formatTimeClock(duration)}`}
-      {/* {formatTimeClock(elapsed)} */}
     </time>
   );
 };

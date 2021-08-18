@@ -12,11 +12,11 @@ export const Navbar = () => {
     <Popover className="absolute w-full top-0 left-0 z-50">
       {({ open }) => (
         <>
-          <div className="flex items-center px-6 py-5 sm:py-10 mx-auto max-w-7xl">
+          <div className="flex items-center px-6 py-4 sm:py-10 mx-auto max-w-7xl">
             <Link to="/">
               <img src={logo} alt="whitesand logo" className="w-10 sm:w-12" />
             </Link>
-            <nav className="hidden sm:block ml-auto text-base lg:text-lg">
+            <nav className="hidden sm:block ml-auto text-base lg:text-lg uppercase">
               <Link
                 to="/"
                 className="mr-4 md:mr-7 hover:opacity-70 transition-opacity"
@@ -69,7 +69,7 @@ export const Navbar = () => {
               static
               className="bg-black absolute top-0 z-10 lg:hidden w-screen h-screen"
             >
-              <div className="flex items-center px-6 py-5 sm:py-10 mx-auto max-w-7xl">
+              <div className="flex items-center px-6 py-4 sm:py-10 mx-auto max-w-7xl">
                 <Popover.Button as="div">
                   <Link to="/">
                     <img
@@ -84,7 +84,7 @@ export const Navbar = () => {
                   <XIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <nav className="flex flex-col mt-7 items-center justify-around text-xl">
+              <nav className="flex flex-col mt-7 items-center justify-around text-base uppercase">
                 <Popover.Button as="div" className="mb-7">
                   <Link to="/" className="hover:opacity-70 transition-opacity">
                     Home
@@ -128,14 +128,14 @@ export const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Spotify className="w-7 h-7" />
+                    <Spotify className="w-6 h-6" />
                   </a>
                   <a
                     href="https://www.youtube.com/channel/UCe96JG5gdgSRtmqStx0isXA"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Youtube className="w-7 h-7 ml-4" />
+                    <Youtube className="w-6 h-6 ml-4" />
                   </a>
                 </div>
               </nav>

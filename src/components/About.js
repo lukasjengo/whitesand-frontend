@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 export const About = () => {
   return (
     <section
-      className="grid md:grid-cols-2 gap-y-10 gap-x-20 lg:gap-x-40 xl:gap-x-56 items-center mx-auto px-0 md:px-6 py-16 sm:py-32 max-w-7xl"
+      className="grid md:grid-cols-2 gap-y-10 gap-x-20 lg:gap-x-40 xl:gap-x-56 items-center mx-auto px-0 md:px-6 py-16 sm:py-24 max-w-7xl"
       id="about"
     >
       <div>
