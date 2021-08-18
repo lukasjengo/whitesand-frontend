@@ -1,31 +1,45 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import { useAudioPlayer } from 'react-use-audio-player';
 
 import { Pause, Play, Spotify, Youtube } from '../icons';
 
-export const PlayList = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allMusicJson {
-        nodes {
-          youtube
-          title
-          spotify
-          audio {
-            publicURL
-          }
-        }
-      }
-    }
-  `);
+export const PlayList = ({ playlistData, currentSong, setCurrentSong }) => {
+  const { load, playing, pause, togglePlayPause } = useAudioPlayer();
 
-  const { load, playing, pause } = useAudioPlayer();
-  const [currentSong, setCurrentSong] = React.useState('');
+  const changeSong = (musicNode) => {
+    load({
+      src: musicNode.audio.publicURL,
+      autoplay: !playing,
+      html5: true,
+      format: ['mp3'],
+      onend: () => {
+        const index =
+          playlistData.allMusicJson.nodes.findIndex(
+            (el) => el.audio.publicURL === musicNode.audio.publicURL
+          ) + 1;
+        const autoplay = (i, list) => {
+          setCurrentSong(list[i].audio.publicURL);
+          load({
+            src: list[i].audio.publicURL,
+            autoplay: true,
+            html5: true,
+            onend: function () {
+              if (i + 1 == list.length) {
+                autoplay(0, list);
+              } else {
+                autoplay(i + 1, list);
+              }
+            },
+          });
+        };
+        autoplay(index, playlistData.allMusicJson.nodes);
+      },
+    });
+  };
 
   return (
     <ul className="mt-4">
-      {data.allMusicJson.nodes.map((node) => {
+      {playlistData.allMusicJson.nodes.map((node) => {
         return (
           <li
             key={node.audio.publicURL}
@@ -48,34 +62,9 @@ export const PlayList = () => {
               <button
                 onClick={() => {
                   setCurrentSong(node.audio.publicURL);
-                  load({
-                    src: node.audio.publicURL,
-                    autoplay: !playing,
-                    html5: true,
-                    format: ['mp3'],
-                    onend: () => {
-                      const index =
-                        data.allMusicJson.nodes.findIndex(
-                          (el) => el.audio.publicURL === node.audio.publicURL
-                        ) + 1;
-                      const autoplay = (i, list) => {
-                        setCurrentSong(list[i].audio.publicURL);
-                        load({
-                          src: list[i].audio.publicURL,
-                          autoplay: !playing,
-                          html5: true,
-                          onend: function () {
-                            if (i + 1 == list.length) {
-                              autoplay(0, list);
-                            } else {
-                              autoplay(i + 1, list);
-                            }
-                          },
-                        });
-                      };
-                      autoplay(index, data.allMusicJson.nodes);
-                    },
-                  });
+                  currentSong !== node.audio.publicURL
+                    ? changeSong(node)
+                    : togglePlayPause();
                 }}
                 className="focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray hover:opacity-70 transition-opacity"
               >
