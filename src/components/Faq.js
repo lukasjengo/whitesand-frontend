@@ -39,7 +39,7 @@ export const Faq = () => {
   return (
     <div>
       <div className="max-w-8xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+        <div className="max-w-3xl mx-auto divide-y-2 divide-gray">
           <h2 className="text-center text-7xl">FAQs</h2>
           <Accordion
             allowZeroExpanded={true}
@@ -48,8 +48,8 @@ export const Faq = () => {
           >
             {faqs.map((faq) => (
               <AccordionItem key={faq.question} className="text-lg pt-6">
-                <AccordionItemHeading className="font-medium text-gray-900">
-                  <AccordionItemButton className="text-left w-full flex justify-between items-start text-gray-400">
+                <AccordionItemHeading className="font-medium text-gray">
+                  <AccordionItemButton className="text-left w-full flex justify-between items-start text-gray">
                     {faq.question}
                     <span className="ml-6 h-7 flex items-center">
                       <AccordionItemState>
@@ -66,8 +66,8 @@ export const Faq = () => {
                     </span>
                   </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel className="mt-2 pr-12">
-                  <p className="text-base text-gray-400 font-sans">
+                <AccordionItemPanel className="mt-8 pr-12">
+                  <p className="text-base text-gray opacity-80 font-sans">
                     {faq.answer}
                   </p>
                 </AccordionItemPanel>

@@ -19,9 +19,9 @@ const IndexPage = () => {
         <AudioPlayerProvider>
           <Mywork />
         </AudioPlayerProvider>
-        {/* <Services />
+        <Services />
         <Faq />
-        <Contact /> */}
+        {/* <Contact /> */}
       </main>
     </div>
   );

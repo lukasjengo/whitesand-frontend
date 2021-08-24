@@ -60,7 +60,7 @@ export const AudioPlayer = () => {
 
   return (
     <>
-      <div className="flex items-center mt-16">
+      <div className="flex items-center">
         <button
           onClick={() => {
             currentSong.length > 0 ? togglePlayPause() : initializePlayer();
