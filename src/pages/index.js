@@ -21,7 +21,7 @@ const IndexPage = () => {
         </AudioPlayerProvider>
         <Services />
         <Faq />
-        {/* <Contact /> */}
+        <Contact />
       </main>
     </div>
   );

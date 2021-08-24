@@ -7,10 +7,7 @@ import { AudioPlayer } from './AudioPlayer';
 export const Mywork = () => {
   const { pause } = useAudioPlayer();
   return (
-    <section
-      className="mx-auto px-6 xl:px-0 py-8 sm:py-12 max-w-7xl"
-      id="my-work"
-    >
+    <section className="mx-auto px-6 py-8 sm:py-12 max-w-7xl" id="my-work">
       <div className="text-center">
         <h2 className="text-4xl sm:text-6xl">My work</h2>
         <h3 className="text-2xl opacity-60 tracking-wider sm:tracking-widest mt-4">

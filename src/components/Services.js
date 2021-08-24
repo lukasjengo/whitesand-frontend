@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import { ButtonLink } from './ButtonLink';
+import { Button } from './Button';
 
 export const Services = () => {
   return (
@@ -23,9 +24,9 @@ export const Services = () => {
           sure that music reaches intended emotional impact. The whole process
           is collaborative.
         </p>
-        <ButtonLink to="/#contact" dark>
-          Get in touch
-        </ButtonLink>
+        <Link to="/#contact">
+          <Button dark>Get in touch</Button>
+        </Link>
       </div>
       <div className="md:max-w-lg h-80 md:h-full place-self-end">
         <StaticImage

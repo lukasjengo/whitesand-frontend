@@ -37,14 +37,14 @@ const classNames = (...classes) => classes.filter(Boolean).join(' ');
 
 export const Faq = () => {
   return (
-    <div className="mx-auto px-6 xl:px-0 py-8 sm:py-12 max-w-7xl">
+    <section className="mx-auto px-6 py-8 sm:py-12 max-w-7xl">
       <div className="max-w-2xl mx-auto mt-16">
         <h2 className="text-center text-4xl sm:text-6xl">FAQs</h2>
         <Accordion allowZeroExpanded={true} className="mt-8">
           {faqs.map((faq) => (
             <AccordionItem
               key={faq.question}
-              className="text-lg py-4 border-b-2 border-gray border-opacity-10"
+              className="text-base sm:text-lg py-4 border-b-2 border-gray border-opacity-10"
             >
               <AccordionItemHeading className="hover:opacity-80 transition-opacity">
                 <AccordionItemButton className="flex justify-between items-center">
@@ -71,6 +71,6 @@ export const Faq = () => {
           ))}
         </Accordion>
       </div>
-    </div>
+    </section>
   );
 };

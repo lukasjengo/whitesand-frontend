@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import { WaveLong } from '../icons/WaveLong';
-import { ButtonLink } from './ButtonLink';
+import { Button } from './Button';
 
 export const Hero = () => {
   return (
@@ -54,7 +54,9 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex flex-col items-center pb-4 sm:pb-10">
-          <ButtonLink to="/#contact">Get in touch</ButtonLink>
+          <Link to="/#contact">
+            <Button>Get in touch</Button>
+          </Link>
           <span className="text-base mt-8 opacity-70">or</span>
           <Link
             to="/#my-work"
