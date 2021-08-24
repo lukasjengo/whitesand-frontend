@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from 'gatsby';
 import axios from 'axios';
 
 import { Refresh, ExclamationCircle } from '../icons';
@@ -39,6 +40,7 @@ export const ContactForm = () => {
       if (data.success) {
         setLoading(false);
         setFormData(initialFormData);
+        navigate('/message-sent');
       } else {
         throw new Error(data.message);
       }
