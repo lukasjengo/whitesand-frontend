@@ -7,23 +7,20 @@ import { Hero } from '../components/Hero';
 import { Mywork } from '../components/Mywork';
 import { Contact } from '../components/Contact';
 import { Services } from '../components/Services';
-import { Navbar } from '../components/Navbar';
+import { Layout } from '../components/Layout';
 
 const IndexPage = () => {
   return (
-    <div className="bg-black text-gray">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <AudioPlayerProvider>
-          <Mywork />
-        </AudioPlayerProvider>
-        <Services />
-        <Faq />
-        <Contact />
-      </main>
-    </div>
+    <Layout>
+      <Hero />
+      <About />
+      <AudioPlayerProvider>
+        <Mywork />
+      </AudioPlayerProvider>
+      <Services />
+      <Faq />
+      <Contact />
+    </Layout>
   );
 };
 
