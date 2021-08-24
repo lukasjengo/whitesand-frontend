@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAudioPosition, useAudioPlayer } from 'react-use-audio-player';
+import { useAudioPosition } from 'react-use-audio-player';
 import { AudioTime } from './AudioTime';
 
 export const AudioProgress = () => {
@@ -7,7 +7,6 @@ export const AudioProgress = () => {
     highRefreshRate: true,
   });
 
-  const { playing } = useAudioPlayer();
   const [barWidth, setBarWidth] = React.useState('0%');
 
   const seekBarRef = React.useRef(null);
@@ -27,7 +26,7 @@ export const AudioProgress = () => {
         seek(percent * duration);
       }
     },
-    [duration, playing, seek]
+    [duration, seek]
   );
 
   return (

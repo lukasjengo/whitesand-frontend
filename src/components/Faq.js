@@ -44,7 +44,6 @@ export const Faq = () => {
           <Accordion
             allowZeroExpanded={true}
             className="mt-6 space-y-6 divide-y divide-gray-200"
-            // onChange={(ids) => setOpenAccordions(ids)}
           >
             {faqs.map((faq) => (
               <AccordionItem key={faq.question} className="text-lg pt-6">

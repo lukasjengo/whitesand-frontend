@@ -44,6 +44,7 @@ export const Mywork = () => {
               playerVars: {
                 autoplay: 0,
               },
+              host: 'https://www.youtube-nocookie.com',
             }}
             onPlay={() => pause()}
             className="border-2 gradient-border"
