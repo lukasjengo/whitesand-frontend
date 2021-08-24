@@ -37,8 +37,8 @@ const classNames = (...classes) => classes.filter(Boolean).join(' ');
 
 export const Faq = () => {
   return (
-    <section className="mx-auto px-6 py-8 sm:py-12 max-w-7xl">
-      <div className="max-w-2xl mx-auto mt-16">
+    <section className="mx-auto px-6 py-12 sm:py-20 max-w-7xl">
+      <div className="max-w-2xl mx-auto">
         <h2 className="text-center text-4xl sm:text-6xl">FAQs</h2>
         <Accordion allowZeroExpanded={true} className="mt-8">
           {faqs.map((faq) => (

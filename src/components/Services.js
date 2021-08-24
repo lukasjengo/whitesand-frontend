@@ -7,7 +7,7 @@ import { Button } from './Button';
 export const Services = () => {
   return (
     <section
-      className="grid md:grid-cols-2 gap-x-20 lg:gap-x-40 items-center mx-auto max-w-7xl bg-gray my-8 sm:my-12"
+      className="grid md:grid-cols-2 gap-x-20 lg:gap-x-40 items-center mx-auto max-w-7xl bg-gray mt-6 sm:mt-10 mb-12 sm:mb-20"
       id="about"
     >
       <div className="text-black px-6 xl:px-12 py-12 sm:py-16">
@@ -28,7 +28,7 @@ export const Services = () => {
           <Button dark>Get in touch</Button>
         </Link>
       </div>
-      <div className="md:max-w-lg h-80 md:h-full place-self-end">
+      <div className="md:max-w-xl h-80 md:h-full place-self-end">
         <StaticImage
           alt=""
           src="../assets/images/piano-keys.jpg"
