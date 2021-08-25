@@ -2,7 +2,7 @@ import React from 'react';
 import YouTube from 'react-youtube';
 import { useAudioPlayer } from 'react-use-audio-player';
 
-import { AudioPlayer } from './AudioPlayer';
+import { AudioPlayer } from '../components';
 
 export const Mywork = () => {
   const { pause } = useAudioPlayer();

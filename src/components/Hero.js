@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import { WaveLong } from '../icons/WaveLong';
-import { Button } from './Button';
+import { Button } from '../components';
 
 export const Hero = () => {
   return (

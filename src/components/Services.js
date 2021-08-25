@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import { Button } from './Button';
+import { Button } from '../components';
 
 export const Services = () => {
   return (

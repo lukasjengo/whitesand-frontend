@@ -3,8 +3,7 @@ import { navigate } from 'gatsby';
 import axios from 'axios';
 
 import { Refresh, ExclamationCircle } from '../icons';
-import { Notification } from './Notification';
-import { Button } from './Button';
+import { Notification, Button } from '../components';
 
 export const ContactForm = () => {
   const initialFormData = {

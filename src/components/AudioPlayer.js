@@ -3,8 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { useAudioPlayer } from 'react-use-audio-player';
 
 import { Pause, Play } from '../icons';
-import { AudioProgress } from './AudioProgress';
-import { PlayList } from './PlayList';
+import { AudioProgress, PlayList } from '../components';
 
 export const AudioPlayer = () => {
   const data = useStaticQuery(query);

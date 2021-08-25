@@ -1,9 +1,8 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import { Layout } from '../components/Layout';
-import { Seo } from '../components/Seo';
-import { WaveLong } from '../icons/WaveLong';
+import { Layout, Seo } from '../components';
+import { WaveLong } from '../icons';
 
 const NotFoundPage = () => {
   return (

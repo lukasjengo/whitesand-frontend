@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAudioPosition } from 'react-use-audio-player';
-import { AudioTime } from './AudioTime';
+import { AudioTime } from '../components';
 
 export const AudioProgress = () => {
   const { percentComplete, duration, seek } = useAudioPosition({
