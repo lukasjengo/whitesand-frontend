@@ -71,6 +71,7 @@ button {
       rgba(236, 233, 228, 0.5),
       rgba(0, 0, 0, 0)
     );
+    border-image-slice: 1;
   }
 
   @keyframes rotate {
