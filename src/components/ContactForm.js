@@ -33,7 +33,7 @@ export const ContactForm = () => {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        `https://${window.location.hostname}/.netlify/functions/send-email`,
+        `${process.env.GATSBY_API_URL}/send-email`,
         formData
       );
 
@@ -76,7 +76,7 @@ export const ContactForm = () => {
         onSubmit={handleSubmit}
       >
         <div className="sm:col-span-1">
-          <label htmlFor="firstName" className="block">
+          <label htmlFor="firstName" className="block cursor-pointer">
             Name
           </label>
           <div className="mt-1">
@@ -85,7 +85,7 @@ export const ContactForm = () => {
               name="firstName"
               id="firstName"
               autoComplete="given-name"
-              className="block w-full sm:text-sm bg-gray text-black py-2 px-3"
+              className="block w-full sm:text-sm bg-gray text-black py-2 px-3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black border-2 border-gray"
               onChange={handleChange}
               value={formData.firstName}
               required
@@ -93,7 +93,7 @@ export const ContactForm = () => {
           </div>
         </div>
         <div className="sm:col-span-2">
-          <label htmlFor="email" className="block">
+          <label htmlFor="email" className="block cursor-pointer">
             Email
           </label>
           <div className="mt-1">
@@ -102,7 +102,7 @@ export const ContactForm = () => {
               name="email"
               type="email"
               autoComplete="email"
-              className="block w-full sm:text-sm bg-gray text-black py-2 px-3"
+              className="block w-full sm:text-sm bg-gray text-black py-2 px-3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black border-2 border-gray"
               onChange={handleChange}
               value={formData.email}
               required
@@ -110,7 +110,7 @@ export const ContactForm = () => {
           </div>
         </div>
         <div className="sm:col-span-3">
-          <label htmlFor="subject" className="block">
+          <label htmlFor="subject" className="block cursor-pointer">
             Subject
           </label>
           <div className="mt-1">
@@ -119,7 +119,7 @@ export const ContactForm = () => {
               name="subject"
               id="subject"
               autoComplete="subject"
-              className="block w-full sm:text-sm bg-gray text-black py-2 px-3"
+              className="block w-full sm:text-sm bg-gray text-black py-2 px-3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black border-2 border-gray"
               onChange={handleChange}
               value={formData.subject}
               required
@@ -128,7 +128,7 @@ export const ContactForm = () => {
         </div>
         <div className="sm:col-span-3">
           <div className="flex justify-between">
-            <label htmlFor="message" className="block">
+            <label htmlFor="message" className="block cursor-pointer">
               Message
             </label>
           </div>
@@ -137,7 +137,7 @@ export const ContactForm = () => {
               id="message"
               name="message"
               rows={8}
-              className="font-sans block w-full sm:text-sm bg-gray text-black py-2 px-3"
+              className="font-sans block w-full sm:text-sm bg-gray text-black py-2 px-3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black border-2 border-gray"
               onChange={handleChange}
               value={formData.message}
               required

@@ -7,20 +7,7 @@ import { AudioProgress } from './AudioProgress';
 import { PlayList } from './PlayList';
 
 export const AudioPlayer = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allMusicJson {
-        nodes {
-          youtube
-          title
-          spotify
-          audio {
-            publicURL
-          }
-        }
-      }
-    }
-  `);
+  const data = useStaticQuery(query);
   const { togglePlayPause, playing, load } = useAudioPlayer();
 
   const [currentSong, setCurrentSong] = React.useState('');
@@ -83,3 +70,18 @@ export const AudioPlayer = () => {
     </>
   );
 };
+
+const query = graphql`
+  {
+    allMusicJson {
+      nodes {
+        youtube
+        title
+        spotify
+        audio {
+          publicURL
+        }
+      }
+    }
+  }
+`;

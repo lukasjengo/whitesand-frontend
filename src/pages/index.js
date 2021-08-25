@@ -8,19 +8,23 @@ import { Mywork } from '../components/Mywork';
 import { Contact } from '../components/Contact';
 import { Services } from '../components/Services';
 import { Layout } from '../components/Layout';
+import { Seo } from '../components/Seo';
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <Hero />
-      <About />
-      <AudioPlayerProvider>
-        <Mywork />
-      </AudioPlayerProvider>
-      <Services />
-      <Faq />
-      <Contact />
-    </Layout>
+    <>
+      <Seo />
+      <Layout>
+        <Hero />
+        <About />
+        <AudioPlayerProvider>
+          <Mywork />
+        </AudioPlayerProvider>
+        <Services />
+        <Faq />
+        <Contact />
+      </Layout>
+    </>
   );
 };
 

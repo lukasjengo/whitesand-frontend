@@ -1,32 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: 'whitesand',
+    title: 'Musician · composer · producer',
+    titleTemplate: '%s | Whitesand',
+    description:
+      'Cinematic music composer and producer. Creator of royalty-free music YouTube channel Whitesand.',
+    url: 'https://www.whitesandmusic.com',
+    image: '/images/logo-dark.png',
   },
   plugins: [
     'gatsby-plugin-image',
-    // {
-    //   resolve: "gatsby-plugin-google-analytics",
-    //   options: {
-    //     trackingId: "",
-    //   },
-    // },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        icon: './src/assets/images/icon.png',
-      },
-    },
     'gatsby-plugin-sharp',
-    // {
-    //   resolve: `gatsby-plugin-sharp`,
-    //   options: {
-    //     defaults: {
-    //       quality: 50
-    //     }
-    //   }
-    // },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
@@ -36,12 +20,12 @@ module.exports = {
       },
       __key: 'images',
     },
-    `gatsby-transformer-json`,
+    'gatsby-transformer-json',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `music`,
-        path: `./src/assets/music/`,
+        name: 'music',
+        path: './src/assets/music/',
       },
     },
     'gatsby-plugin-postcss',
@@ -55,6 +39,18 @@ module.exports = {
             'Cache-Control: immutable',
           ],
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Whitesand',
+        short_name: 'Whitesand',
+        start_url: '/',
+        background_color: '#111111',
+        theme_color: '#ECE9E4',
+        display: 'standalone',
+        icon: 'src/assets/images/logo-dark.png',
       },
     },
   ],

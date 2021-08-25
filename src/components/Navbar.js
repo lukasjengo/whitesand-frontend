@@ -84,13 +84,13 @@ export const Navbar = () => {
                   <XIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <nav className="flex flex-col mt-7 items-center justify-around text-base uppercase">
-                <Popover.Button as="div" className="mb-7">
+              <nav className="flex flex-col mt-8 items-center justify-around text-base uppercase">
+                <Popover.Button as="div" className="mb-8">
                   <Link to="/" className="hover:opacity-70 transition-opacity">
                     Home
                   </Link>
                 </Popover.Button>
-                <Popover.Button as="div" className="mb-7">
+                <Popover.Button as="div" className="mb-8">
                   <Link
                     to="/#about"
                     className="hover:opacity-70 transition-opacity"
@@ -98,7 +98,7 @@ export const Navbar = () => {
                     About
                   </Link>
                 </Popover.Button>
-                <Popover.Button as="div" className="mb-7">
+                <Popover.Button as="div" className="mb-8">
                   <Link
                     to="/#my-work"
                     className="hover:opacity-70 transition-opacity"
@@ -106,7 +106,7 @@ export const Navbar = () => {
                     My work
                   </Link>
                 </Popover.Button>
-                <Popover.Button as="div" className="mb-7">
+                <Popover.Button as="div" className="mb-8">
                   <Link
                     to="/#services"
                     className="hover:opacity-70 transition-opacity"
@@ -114,7 +114,7 @@ export const Navbar = () => {
                     Services
                   </Link>
                 </Popover.Button>
-                <Popover.Button as="div" className="mb-7">
+                <Popover.Button as="div" className="mb-8">
                   <Link
                     to="/#contact"
                     className="hover:opacity-70 transition-opacity"
@@ -136,6 +136,17 @@ export const Navbar = () => {
                     rel="noopener noreferrer"
                   >
                     <Youtube className="w-6 h-6 ml-4" />
+                  </a>
+                </div>
+                <div className="lowercase text-xs opacity-70 mt-16">
+                  Design & code by{' '}
+                  <a
+                    href="https://ljandev.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline opacity-70 hover:opacity-100 transition-opacity"
+                  >
+                    ljandev.com
                   </a>
                 </div>
               </nav>
