@@ -38,16 +38,20 @@
   }
 }
 
-[type='button'],
-[type='submit'],
-[type='text'],
-[type='email'],
-button,
-input,
-textarea {
+input[type='button'],
+input[type='submit'],
+input[type='text'],
+input[type='email'],
+input[type='search'],
+textarea,
+button {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
 }
 
 .gradient-border {
