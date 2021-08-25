@@ -38,6 +38,18 @@
   }
 }
 
+[type='button'],
+[type='submit'],
+[type='text'],
+[type='email'],
+button,
+input,
+textarea {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
 .gradient-border {
   --angle: 0deg;
   border-image: linear-gradient(

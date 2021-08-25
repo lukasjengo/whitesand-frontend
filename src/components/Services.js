@@ -8,7 +8,7 @@ export const Services = () => {
   return (
     <section
       className="grid md:grid-cols-2 gap-x-20 lg:gap-x-40 items-center mx-auto max-w-7xl bg-gray mt-6 sm:mt-10 mb-12 sm:mb-20"
-      id="about"
+      id="services"
     >
       <div className="text-black px-6 xl:px-12 py-12 sm:py-16">
         <h2 className="text-4xl sm:text-6xl">Services</h2>
