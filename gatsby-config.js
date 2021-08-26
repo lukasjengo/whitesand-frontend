@@ -41,5 +41,23 @@ module.exports = {
         icon: 'src/assets/images/logo-dark.png',
       },
     },
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {
+          // Cache fonts forever
+          '/fonts/*': [
+            'Cache-Control: public',
+            'Cache-Control: max-age=365000000',
+            'Cache-Control: immutable',
+          ],
+          // Cache static files for a week
+          '/static/*': [
+            'Cache-Control: public',
+            'Cache-Control: max-age=604800',
+          ],
+        },
+      },
+    },
   ],
 };
